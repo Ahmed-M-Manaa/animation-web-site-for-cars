@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: #1B1B1B;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+.header-links-on-right {
+    list-style: none;
+    /* position: relative; */
+}
+.header-links-on-right li a{
+    /* list-style: none; */
+    position: relative;
+}
+.header-links-on-left li a {
+    /* list-style: none; */
+    position: relative;
+}
+.header-links-on-right a::after,
+.header-links-on-left a::after
+{
+    position: absolute;
+   content: "";
+   width: 0px;
+   height: 4px;
+   top: 22px;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background-color: #4ca7fd;
+   opacity: 0;
+   transition: .5s;
+}
+.header-links-on-right a:hover::after,
+.header-links-on-left a:hover::after
+ {
+    width: 60px;
+    z-index: 2;
+    opacity: 1;
+    border-radius: 5px;
+}
+.first-header-link{
+    text-decoration: underline ;
+    color: #ab0000;
+}
+.header-link-on-left{
+    list-style: none;
+    text-transform: capitalize;
+}
+.header-link-on-left a {
+display: inline;
+color: aliceblue;
+float: left;
+margin: 16px 20px ;
+font-size: 25;
+text-decoration: none;
+}
+.header-links-on-right a{
+    display: inline;
+   color: aliceblue;
+   float:right;
+   font-size: 20;
+   letter-spacing: 2px;
+   margin: 16px 19px;
+   text-decoration: none;
+  /* position: relative; */
+}
+.header-img{
+     text-align: center;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+.ani-div-1{
+    position: absolute;
+    top: 60px;
+    }
+    .alldivs{
+        position: relative;
+    }
+    .ani-1{
+        width:200px;
+        height:100px;
+        top: 0;
+        left: 0;
+        background-image: url(../imges/mersedes\ bnz\ red\ gt43\ amg\ .png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-name: red-merchange;
+        animation-duration: 2s;
+        position: absolute;
+        animation-fill-mode: both;
+        animation-direction: reverse;
+        animation-play-state: running;
+        animation-timing-function:linear;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes red-merchange{
+        0%{
+      
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1100px;
+       }
+    }
+    
+    
+    .ani-div-2{
+        position: absolute;
+        top: 280px;
+    }
+    .ani-2{
+        width:250px;
+        height:150px;
+        top: 0;
+        left: 0;
+        background-image: url(../imges/audi.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-name:car-3;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay:2s;
+        animation-fill-mode: both;
+        animation-direction: reverse;
+        animation-play-state: running;
+        animation-timing-function: linear;
+        /* animation-iteration-count: infinite; */
+    }
+
+    @keyframes car-3{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    }
+    
+    .ani-div-3{
+        position: absolute;
+        top: 180px;
+        }
+    .ani-3{
+        width: 250px;
+        height:100px;
+        left: 0;
+        background-image: url(../imges/2024-audi-a4-103-64aefe768be8e.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+         position: absolute;
+        animation-delay: 0s;
+        animation-name:audi-left ;
+        animation-fill-mode: both;
+         /* animation-direction: reverse;  */
+         animation-play-state: running;
+        animation-timing-function: linear;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes audi-left{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    } 
+
+   .ani-div-4{
+        position: absolute;
+        top: 430px;
+        }
+    .ani-4{
+        width: 250px;
+        height:100px;
+        left: 0;
+        background-image: url(../imges/Screenshot\ 2024-04-02\ 134548.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay: 2s;
+        animation-name:white-mer;
+        animation-fill-mode: both;
+         /* animation-direction: reverse;  */
+         animation-play-state: running;
+        animation-timing-function: ease-in;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes white-mer{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    } 
+
+
+    .ani-div-4{
+        position: absolute;
+        top: 450px;
+        }
+    .ani-4{
+        width: 250px;
+        height:100px;
+        left: 0;
+        background-image: url(../imges/m5-exterior-right-front-three-quarter-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay: 2s;
+        animation-name:bmw;
+        animation-fill-mode: both;
+         /* animation-direction: reverse;  */
+         animation-play-state: running;
+        animation-timing-function: ease-in;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes bmw {
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    } 
+
+    .ani-div-5{
+        position: absolute;
+        top: 580px;
+        }
+    .ani-5{
+        width: 250px;
+        height:150px;
+        left: 0;
+        background-image: url(../imges/listing_main_01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay: 4s;
+        animation-name:bmw2;
+        animation-fill-mode: both;
+         animation-direction: reverse; 
+         animation-play-state: running;
+        animation-timing-function: ease-in;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes bmw2{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    } 
+
+
+
+
+
+
+
+
+ .ani-div-6{
+        position: absolute;
+        top: 720px;
+        }
+    .ani-6{
+        width: 250px;
+        height:150px;
+        left: 0;
+        background-image: url(../imges/JL401220-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay: 4s;
+        animation-name:maziraty;
+        animation-fill-mode: both;
+         /* animation-direction: reverse;  */
+         animation-play-state: running;
+        animation-timing-function: ease-in;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes maziraty{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    }  
+
+
+
+
+
+
+
+ .ani-div-7{ 
+        position: absolute;
+        top: 880px;
+        }
+    .ani-7{
+        width: 250px;
+        height:150px;
+        left: 0;
+        background-image: url(../imges/moza.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay: 6s;
+        animation-name:maziraty-2;
+        animation-fill-mode: both;
+          animation-direction: reverse;  
+         animation-play-state: running;
+        animation-timing-function: ease-in;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes maziraty-2{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    }  
+
+
+
+
+
+
+
+    .ani-div-8{ 
+        position: absolute;
+        top: 1000px;
+        }
+    .ani-8{
+        width: 250px;
+        height:150px;
+        left: 0;
+        background-image: url(../imges/gogo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-duration: 2s;
+        position: absolute;
+        animation-delay: 6s;
+        animation-name:gogo;
+        animation-fill-mode: both;
+          /* animation-direction: reverse;   */
+         animation-play-state: running;
+        animation-timing-function: ease-in;7
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes gogo{
+        0%{
+        }
+        50%{
+    left: 50%;
+    
+        }
+        100%{
+    left: 1250px;
+       }
+    }  
